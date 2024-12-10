@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            box-shadow: none;
+        }
+
+        .contact-header {
+            background-color: #1a237e; /* Dark Blue */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            animation: fadeInDown 1s;
+        }
+
+        .contact-card {
+            border: none;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            animation: slideUp 1.2s;
+        }
+
+        .btn-submit {
+            background-color: #ff6f00; /* Orange */
+            border: none;
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-submit:hover {
+            background-color: #1a237e;
+            color: white;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+     <nav class="navbar navbar-expand-xl navbar-dark p-0" aria-label="Offcanvas navbar large">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="#">
+           <span><img src="images/INCSTIC_Compressed-removebg-preview.png" class="img-fluid cu-logo" alt="" width="110" /></span>
+           <span><img src="images/AIP_Publishing_logo-removebg-preview (1).png" class="img-fluid naac-logo" alt="" width="110" /></span>
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+           aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+           aria-labelledby="offcanvasNavbar2Label">
+           <div class="offcanvas-header">
+             <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+               Menu
+             </h5>
+             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+               aria-label="Close"></button>
+           </div>
+           <div class="offcanvas-body">
+             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">About</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#about">About GU</a></li>
+                   <li><a class="dropdown-item" href="#objectives">About INCSTIC</a></li>
+                   <li><a class="dropdown-item" href="#about">About CSE</a></li>
+                 </ul>
+               </li>
+ 
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">Call for Paper</a>
+                 <ul class="dropdown-menu">
+                   <li class="nav-item">
+                     <a class="dropdown-item" href="call-for-paper.php">Track Details</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="dropdown-item" href="#outsomes">Important Dates</a>
+                   </li>
+                   <li class="">
+                     <a class="dropdown-item" href="submission-guidelines.php">Submission Guideline</a>
+                   </li>
+                 </ul>
+               </li>
+ 
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">Camera Ready Submission</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="camera-ready-submission.php">Camera Ready Submission Guideline</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="dropdown-item" href="Registrationincacct.aspx">Registration</a>
+                   </li>
+                 </ul>
+               </li>
+ 
+               <li class="nav-item">
+                 <a class="nav-link" href="#schedule">Committee</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#steering-commettieee">Speakers</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="glimpses.php">Glimpses</a>
+               </li>
+               <!-- <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle orange-text" href="#" role="button" data-bs-toggle="dropdown"
+                   aria-expanded="false">Previous Proceeding & Stastics</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="https://icacct-cu.com/" target="_blank">Previous Website Link</a>
+                   </li>
+                   <li><a class="dropdown-item" href="index.php#objective">Previous Conference Stastics</a>
+                   </li>
+                   <li><a class="dropdown-item" href="https://ieeexplore.ieee.org/xpl/conhome/10550186/proceeding"
+                       target="_blank">2024</a></li>
+                   <li><a class="dropdown-item" href="https://ieeexplore.ieee.org/xpl/conhome/10141668/proceeding"
+                       target="_blank">2023</a></li>
+                  
+                 </ul>
+               </li> -->
+             
+ 
+               <li class="nav-item">
+                 <a class="nav-link mobile-on" href="" class="mobile-show" style="display: none">Register Now&nbsp;&nbsp;
+                   <i class="fa-solid fa-arrow-right"></i></a>
+               </li>
+             </ul>
+             <div class="mobile-university-logo">
+               <img src="https://geetauniversity.edu.in/wp-content/uploads/2022/02/logo2.png" alt="Geeta University Logo"
+                 width="150">
+             </div>
+           </div>
+         </div>
+         <div class="register-sec university-logos">
+           <a class="uni-logo" href="/incacct">
+             <span><img src="https://geetauniversity.edu.in/wp-content/uploads/2022/02/logo2.png"
+                 class="img-fluid cu-logo" alt="" width="150" /></span>
+ 
+           </a>
+         </div>
+       </div>
+       <div class="header__top d-flex justify-content-between align-items-center">
+         <div class="header__top-left w-100">
+           <div class="top-notification-slider1 pagination-style overflow-hidden">
+             <div class="tns-item marquee">
+               <a href="Registrationincacct.aspx" target=""
+                 title="Register via CUCET to avail of a huge merit-based scholarship. - Apply Now"><span
+                   style="color: var(--bg-darkyellow)">Registration has been Opened.</a>
+             </div>
+           </div>
+         </div>
+ 
+       </div>
+     </nav>
+ 
+   </header>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="contact-card">
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control  shadow-none" id="name" placeholder="Enter your name"  required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control shadow-none" id="email" placeholder="Enter your email" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control shadow-none" id="subject" placeholder="Enter subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control shadow-none" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="light btn btn-submit shadow-none">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3" style="background-color: #1a237e; color: white;">
+        <p>Copyright © 2025 1st International Conference on Smart Technologies and Intelligent Computing
+          (INCSTIC-2025)</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Bootstrap Validation Script
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html>
