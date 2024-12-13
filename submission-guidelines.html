@@ -32,46 +32,10 @@
           margin-bottom: 50px;
           margin-top: 20px;
         }
-        .button1 {
-          margin: 0 10px; 
-          padding: 15px 30px; 
-          font-size: larger;
-          display: inline-block;
-          background-color: #0047AB;
-          color: white;
-          border: none; 
-          border-radius: 5px; 
-          cursor: pointer;
-          text-align: center;
-        }
+        
 
-        .button1:hover {
-           background-color: #003580; /* Changes color on hover for interactivity */
-        }
-
-        .multiple-button {
-          display: flex; 
-          justify-content: center; 
-          align-items: center; 
-          gap: 20px; 
-          margin-top: 50px; 
-          margin-bottom: 50px;
-        }
-
-        /* .button1{
-          margin: 50px auto;
-          padding: 15px;
-          font-size: larger;
-          display: inline-block;
-          gap: 10;
-          background-color: #0047AB;
-          color: white;
-        }
-
-        .multiple-button{
-          display: inline-block;
-          row-gap: 20px;
-        } */
+        
+      
          
     </style>
 </head>
@@ -129,21 +93,6 @@
                   <a class="nav-link" href="registration.html">Registration</a>
                 </li>
   
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">Call for Paper</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="dropdown-item" href="track-details.html">Track Details</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="dropdown-item" href="./index.html#outsomes">Important Dates</a>
-                    </li>
-                    <li class="">
-                      <a class="dropdown-item" href="submission-guidelines.php">Submission Guideline</a>
-                    </li>
-                  </ul>
-                </li> -->
   
                 
   
@@ -196,7 +145,7 @@
     <!-- Submission Guidelines Details Section -->
     <section class="py-5">
         <div class="container">
-            <h1 class="para heading">Submission Guidelines</h1>
+            <h1 class="para heading fs-1 text-center">Submission Guidelines</h1>
             <div>
                <p class="lh-lg para">
                   Authors are invited to contribute to the conference by submitting original research articles that illustrate novel findings, significant projects, comprehensive surveys, or industrial experiences in the fields of Smart Technologies and Intelligent Computing. Submissions should highlight advancements, challenges, and opportunities within these domains.
@@ -212,12 +161,26 @@
               
               <p class="para">Interested authors are invited to submit full papers including results, figures and references. Papers will be accepted only by electronic submission through Microsoft CMT link given below. </p>
 
-              <div class="multiple-button">
-                <a href="#"><button class="para button1">CLICK TO SUBMIT PAPER</button></a>
-                <a href="AIPCP-Article-Template.docx" download="AIPCP-Article-Template">
-                  <button class="para button1">DOWNLOAD CONFERENCE TEMPLATE</button>
-                </a>
+              <div class="multiple-button text-center mt-4">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                      <a href="#">
+                        <button class="btn btn-lg w-100" style="background-color: #0047AB; color: white; border: none;">CLICK TO SUBMIT PAPER</button>
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                      <a href="AIPCP-Article-Template.docx" download="AIPCP-Article-Template">
+                        <button class="btn btn-lg w-100" style="background-color: #0047AB; color: white; border: none;">DOWNLOAD CONFERENCE TEMPLATE</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
+              
+              
+              
+              
         
               <h3>Plagiarism Policy</h3>
 
@@ -235,16 +198,11 @@
     <footer id="footer">
       <div class="pt-100 pb-100">
         <div class="container">
-  
-  
           <div class="row">
-            <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+            <div class="col-sm-6 col-md-3 mb-5 mb-md-0">
               <h4><b>Contact Us</b></h4>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.195812889742!2d76.890688876221!3d29.305931275303802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dc3b5533b6d9f%3A0x1b563db61bcc0195!2sGEETA%20UNIVERSITY%2C%20NAULTHA%2C%20PANIPAT!5e0!3m2!1sen!2sin!4v1733814261097!5m2!1sen!2sin" width="200" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <!-- <iframe
-                src="https://www.google.com/maps/place/GEETA+UNIVERSITY,+NAULTHA,+PANIPAT/@29.3059313,76.8906889,17z/data=!3m1!4b1!4m6!3m5!1s0x390dc3b5533b6d9f:0x1b563db61bcc0195!8m2!3d29.3059313!4d76.8932638!16s%2Fg%2F11pv2_3shm?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
-                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        
             </div>
             <div class="col-sm-6 col-md-3 mb-3 mb-md-0 footer-content">
               <h4><b>Quick Links</b></h4>
@@ -266,9 +224,7 @@
               <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Geeta University<br>Naultha<br>Panipat, Haryana (INDIA)</p>
             </div>
             <div class="col-sm-6 col-md-3 mb-3 mb-md-0 footer-content">
-              <!-- <h4 class="invisible">Get in Touch</h4>
-              <h5 class="mb-2">Mr. Ankush Bansal</h5> -->
-              <!-- <p class="mb-0"><a href="tel:+918437715777"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;8437715777</a></p> -->
+ 
               <br>
               <h5 class="mb-2">Dr. Meenu Gupta</h5>
               <p class="mb-0"><a href="tel:+918708951544"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; 8708951544</a></p>
