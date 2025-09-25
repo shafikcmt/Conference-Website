@@ -805,9 +805,13 @@ span.conference-name small {
     transition: all 0.3s ease-in-out;
 }
 
-.commettiee-member.flex-column:hover img {
+.commettiee-member.flex-column img {
     filter: grayscale(0);
 }
+
+/* .commettiee-member.flex-column:hover img {
+    filter: grayscale(0);
+} */
 
 /* */
 .resourcePersonDetails {
