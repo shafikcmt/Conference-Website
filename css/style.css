@@ -801,13 +801,13 @@ span.conference-name small {
 
 .commettiee-member.flex-column img {
     width: 100%;
-    /* filter: grayscale(1); */
-    /* transition: all 0.3s ease-in-out; */
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
 }
 
-/* .commettiee-member.flex-column img {
+.commettiee-member.flex-column:hover img {
     filter: grayscale(0);
-} */
+}
 
 
 /* */
